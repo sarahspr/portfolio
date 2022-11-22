@@ -1,0 +1,94 @@
+@font-face {
+	font-family: "Blastula";
+	src: url("../../fonts/blastula-reg.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Mandala";
+	src: url("../../fonts/mandala.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Redhat Reg";
+	src: url("../../fonts/redhat-reg.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Redhat Med";
+	src: url("../../fonts/redhat-med.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Redhat Bold";
+	src: url("../../fonts/redhat-bold.ttf") format("truetype");
+}
+
+$bandar: "Bandar", sans-serif;
+$blastula: "Blastula", serif;
+$mandala: "Mandala";
+$redhat-reg: "Redhat Reg", sans-serif;
+$redhat-med: "Redhat Med", sans-serif;
+$redhat-bold: "Redhat Bold", sans-serif;
+$fontawesomeBrands: "Font Awesome 6 Brands";
+$fontawesome: "Font Awesome 6 Free";
+
+// Font Weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+body {
+	font-family: $redhat-reg;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: $blastula;
+	font-weight: $bold;
+	margin: 0;
+}
+
+h1,
+.h1 {
+	font-size: 5rem;
+}
+
+h2,
+.h2 {
+	font-size: 4rem;
+}
+
+h3,
+.h3 {
+	font-size: 3rem;
+}
+
+h4,
+.h4 {
+	font-size: 2.5rem;
+}
+
+h5,
+.h5 {
+	font-size: 2rem;
+}
+
+h6,
+.h6 {
+	font-size: 1.5rem;
+}
+
+p,
+a,
+span {
+	font-size: 1rem;
+	font-weight: $regular;
+	letter-spacing: 0.3px;
+}

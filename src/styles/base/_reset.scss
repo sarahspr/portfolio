@@ -1,0 +1,43 @@
+@import "../abstracts/variables";
+
+#root {
+	overflow: hidden;
+}
+
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+p {
+	font: 400 1.8rem/2.4rem $redhat-med;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: $purple;
+}
+
+hr {
+	border: 0;
+	margin: 1.35em auto;
+	max-width: 100%;
+	background-position: 50%;
+	box-sizing: border-box;
+}
