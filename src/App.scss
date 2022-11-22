@@ -6,8 +6,22 @@
 @import "./styles/components/components";
 @import "./styles/vendors/vendors";
 
-.hero-section,
-.about-section,
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 4rem 0;
+	width: 100%;
+}
+
+.column {
+	width: 100%;
+	@media screen and (min-width: $large-tablet) {
+		width: 45%;
+	}
+}
+
+.hero,
+.about,
 .projects-section,
 .resume-section,
 .contact-section {
@@ -21,10 +35,10 @@
 	}
 }
 
-.hero-section {
+.hero {
 	align-items: center;
-	color: $dark-2;
-	background-color: $grey-2;
+	color: $dark;
+	background-color: $grey;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -48,14 +62,10 @@
 		animation: animate-arrow 1.5s linear infinite;
 	}
 	h1 {
-		color: $fuschia-2;
+		color: $fuschia;
 	}
-	.content-container {
-		display: flex;
+	.container {
 		flex-direction: column-reverse;
-		justify-content: space-evenly;
-		margin: 4rem 0;
-		width: 100%;
 		@media screen and (min-width: $large-tablet) {
 			flex-direction: row;
 		}
@@ -65,106 +75,90 @@
 			@media screen and (min-width: $large-tablet) {
 				width: 45%;
 			}
-			&.content-column {
-				align-items: center;
-				display: flex;
-				.content-column-wrapper {
-					align-items: center;
-					display: flex;
-					flex-direction: column;
-					margin: 0 auto;
-					span {
-						font: 400 3rem/4rem $redhat-reg;
-						margin-bottom: 3rem;
-						@media screen and (min-width: $large-tablet) {
-							font: 400 4rem/5rem $redhat-reg;
-						}
-					}
-					.button {
-						text-decoration: none;
-						color: $dark;
-						text-transform: uppercase;
-						font-weight: $medium;
-						color: $fuschia-2;
-						border: 0.3rem solid $fuschia-2;
-						padding: 1.5rem 0.8rem;
-						border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-					}
-				}
-			}
-			&.img-column {
-				display: flex;
-				justify-content: center;
-				margin-bottom: 3rem;
-				position: relative;
-				@media screen and (min-width: $large-tablet) {
-					margin-bottom: 0;
-				}
-				.img-blob-wrapper {
-					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					max-height: 550px;
-					max-width: 550px;
-					background-color: $orange-red;
-					z-index: 1;
-					border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-					animation: morph 3s linear infinite;
-				}
-				.img-wrapper {
-					position: relative;
-					z-index: 2;
-					max-width: 475px;
-					width: 100%;
-					img {
-						width: 100%;
-						border-radius: 56% 44% 59% 41% / 30% 60% 40% 70%;
-						// animation: morph 3s linear infinite;
-					}
-				}
+		}
+	}
+	// #golden-img-container {
+	// 	position: absolute;
+	// 	width: 400px;
+	// 	height: 400px;
+	// 	bottom: -370px;
+	// 	left: -370px;
+	// 	transform: rotate(30deg);
+	// 	transition: all 2s ease-in-out;
+	// 	transition-delay: 250ms;
+	// 	z-index: -1;
+	// 	img {
+	// 		width: 100%;
+	// 	}
+	// 	&.animate {
+	// 		transform: translate(217px, -190px) rotate(30deg);
+	// 	}
+	// }
+
+	// #wheaten-img-container {
+	// 	position: absolute;
+	// 	width: 400px;
+	// 	height: 400px;
+	// 	bottom: -370px;
+	// 	right: -370px;
+	// 	transform: rotate(-30deg);
+	// 	transition: all 2s ease-in-out;
+	// 	transition-delay: 750ms;
+	// 	z-index: -1;
+	// 	img {
+	// 		width: 100%;
+	// 	}
+	// 	&.animate {
+	// 		transform: translate(-225px, -220px) rotate(-30deg);
+	// 	}
+	// }
+	&__content-column {
+		align-items: center;
+		display: flex;
+	}
+	&__content-column-wrapper {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		span {
+			font: 400 3rem/4rem $redhat-reg;
+			margin-bottom: 3rem;
+			@media screen and (min-width: $large-tablet) {
+				font: 400 4rem/5rem $redhat-reg;
 			}
 		}
+		.button {
+			text-decoration: none;
+			color: $dark;
+			text-transform: uppercase;
+			font-weight: $medium;
+			color: $fuschia;
+			border: 0.3rem solid $fuschia;
+			padding: 1.5rem 0.8rem;
+			border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+		}
 	}
-
-	#golden-img-container {
-		position: absolute;
-		width: 400px;
-		height: 400px;
-		bottom: -370px;
-		left: -370px;
-		transform: rotate(30deg);
-		transition: all 2s ease-in-out;
-		transition-delay: 250ms;
-		z-index: -1;
+	&__img-column {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 3rem;
+		position: relative;
+		@media screen and (min-width: $large-tablet) {
+			margin-bottom: 0;
+		}
+	}
+	&__img-wrapper {
+		position: relative;
+		z-index: 2;
+		max-width: 475px;
+		width: 100%;
 		img {
 			width: 100%;
-		}
-		&.animate {
-			transform: translate(217px, -190px) rotate(30deg);
+			border-radius: 56% 44% 59% 41% / 30% 60% 40% 70%;
 		}
 	}
-
-	#wheaten-img-container {
-		position: absolute;
-		width: 400px;
-		height: 400px;
-		bottom: -370px;
-		right: -370px;
-		transform: rotate(-30deg);
-		transition: all 2s ease-in-out;
-		transition-delay: 750ms;
-		z-index: -1;
-		img {
-			width: 100%;
-		}
-		&.animate {
-			transform: translate(-225px, -220px) rotate(-30deg);
-		}
-	}
-
-	.chalk-border-grey2 {
+	.chalk-border-grey {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -177,8 +171,8 @@
 	}
 }
 
-.about-section {
-	background-color: $fuschia-2;
+.about {
+	background-color: $fuschia;
 	padding-top: 14rem;
 	padding-bottom: 10rem;
 	position: relative;
@@ -186,27 +180,22 @@
 		text-align: center;
 		color: $white;
 	}
-	.content-container {
-		display: flex;
+	.container {
 		flex-direction: column;
-		justify-content: space-evenly;
-		margin: 4rem 0;
 		@media screen and (min-width: $large-tablet) {
 			flex-direction: row;
 		}
-		.column {
-			margin-bottom: 3rem;
-			width: 100%;
-			@media screen and (min-width: $large-tablet) {
-				margin-bottom: 0;
-				width: 45%;
-			}
-			&:last-of-type {
-				margin-bottom: 0;
-			}
-			p {
-				color: $white;
-			}
+	}
+	.column {
+		margin-bottom: 3rem;
+		@media screen and (min-width: $large-tablet) {
+			margin-bottom: 0;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		p {
+			color: $white;
 		}
 	}
 	.chalk-border-fuscia {
@@ -223,14 +212,14 @@
 }
 
 .projects-section {
-	background-color: $grey-2;
+	background-color: $grey;
 	padding-top: 16rem;
 	padding-bottom: 12rem;
 	@media screen and (min-width: $large-tablet) {
 		padding-bottom: 8rem;
 	}
 	h2 {
-		color: $fuschia-2;
+		color: $fuschia;
 		text-align: center;
 	}
 	.projects-wrapper {
@@ -243,10 +232,7 @@
 			flex-direction: row;
 		}
 		.project-wrapper {
-			box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
-				rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
-				rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
-				rgba(0, 0, 0, 0.07) 0px 32px 64px;
+			box-shadow: $default-box-shadow;
 			margin-bottom: 5.5rem;
 			width: 100%;
 			&:last-of-type {
@@ -281,7 +267,7 @@
 		}
 		.project-overlay {
 			align-items: center;
-			background-color: $orange-2;
+			background-color: $orange;
 			bottom: 0;
 			clip-path: ellipse(closest-side farthest-side);
 			color: $white;
@@ -306,7 +292,7 @@
 
 .resume-section {
 	align-items: center;
-	background-color: $fuschia-2;
+	background-color: $fuschia;
 	color: $white;
 	display: flex;
 	flex-direction: column;
@@ -375,7 +361,7 @@
 }
 
 .contact-section {
-	background-color: $fuschia-2;
+	background-color: $fuschia;
 	color: $white;
 	// padding-top: 16rem;
 	padding-top: 6rem;
@@ -444,7 +430,7 @@
 }
 
 .button {
-	border: 1rem solid $fuschia-2;
+	border: 1rem solid $fuschia;
 	--mask: linear-gradient(#000 0 0) 50% / calc(100% - 18.5px)
 			calc(100% - 18.5px) no-repeat,
 		radial-gradient(farthest-side, #000 98%, #0000) 0 0/20px 20px round;
@@ -455,7 +441,7 @@
 // /* CSS */
 .button-53 {
 	background-color: $orange-red;
-	border: 0 solid $grey-2;
+	border: 0 solid $grey;
 	box-sizing: border-box;
 	color: $white;
 	display: flex;
@@ -467,7 +453,7 @@
 	padding: 0.75rem 1.65rem;
 	position: relative;
 	text-align: center;
-	text-decoration: none $dark-2 solid;
+	text-decoration: none $dark solid;
 	text-decoration-thickness: auto;
 	position: relative;
 	cursor: pointer;
@@ -503,18 +489,6 @@
 }
 
 // Keyframes
-@keyframes morph {
-	0%,
-	100% {
-		border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-	}
-	34% {
-		border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-	}
-	67% {
-		border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-	}
-}
 
 @keyframes animate-arrow {
 	0%,

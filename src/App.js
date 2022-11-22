@@ -5,9 +5,8 @@ import React, { useState, useEffect } from "react";
 import "./App.scss";
 import upArrow from "./images/up-arrow.png";
 import downArrow from "./images/down-arrow.png";
-import chalkLineGrey2 from "./images/chalk-line-grey2.svg";
+import chalkLineGrey from "./images/chalk-line-grey.svg";
 import chalkLineFuschia from "./images/chalk-line-fuschia.svg";
-// import chalkLineBlue2 from "./images/chalk-line-blue2.svg";
 import avatarPinkBackground from "./images/avatar-pink-background.svg";
 import buckeye from "./images/buckeye.png";
 import braxos from "./images/braxos.png";
@@ -36,11 +35,19 @@ function App() {
 	let github = "https://github.com/sarahspr";
 	let resumeLink =
 		"https://drive.google.com/file/d/1K3-VpoS8RjTvEtr-W5_ZvJwcs6lMkuQs/view?usp=sharing";
+
+	///////////// Animations to add back in later? ////////////
+	// Sets up initial state for scroll
+
 	// const [scroll, setScroll] = useState(false);
+
+	//updates scroll state when window loads
 
 	// window.addEventListener("load", () => {
 	// 	setScroll(true);
 	// });
+
+	//Updates scroll state based on scroll position, removes event listener
 
 	// useEffect(() => {
 	// 	window.addEventListener("scroll", () => {
@@ -52,7 +59,7 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<section className="hero-section">
+			<section className="hero">
 				<div className="page-nav-arrow page-nav-arrow--up">
 					<img src={upArrow}></img>
 				</div>
@@ -60,9 +67,9 @@ function App() {
 					<img src={downArrow}></img>
 				</div>
 				<h1>Hey there, I'm Sarah.</h1>
-				<div className="content-container">
-					<div className="column content-column">
-						<div className="content-column-wrapper">
+				<div className="container">
+					<div className="column hero__content-column">
+						<div className="hero__content-column-wrapper">
 							<span>
 								I've been a CSS Wizard for 3+ years. Welcome to my corner of the
 								internet.
@@ -72,13 +79,14 @@ function App() {
 							</a>
 						</div>
 					</div>
-					<div className="column img-column">
+					<div className="column hero__img-column">
 						{/* <div className="img-blob-wrapper"></div> */}
-						<div className="img-wrapper">
+						<div className="hero__img-wrapper">
 							<img src={avatarPinkBackground}></img>
 						</div>
 					</div>
 				</div>
+				{/* Images to be used with the scroll state above */}
 				{/* <div id="golden-img-container" className={scroll ? "animate" : ""}>
 					<img id="golden" src={golden}></img>
 				</div>
@@ -86,17 +94,17 @@ function App() {
 					<img id="wheaten" src={wheaten}></img>
 				</div> */}
 				<div
-					className="chalk-border-grey2"
+					className="chalk-border-grey"
 					style={{
-						backgroundImage: `url(${chalkLineGrey2})`,
+						backgroundImage: `url(${chalkLineGrey})`,
 					}}
 				></div>
 			</section>
 
-			<section id="about" className="about-section">
+			<section id="about" className="about">
 				<h1>About</h1>
-				<div className="content-container">
-					<div className="column column-one">
+				<div className="container">
+					<div className="column">
 						<p>
 							I am an innovative and collaborate self-taught front-end developer
 							with 3+ years of development experience. I have worked in
@@ -109,7 +117,7 @@ function App() {
 							importance.
 						</p>
 					</div>
-					<div className="column column-two">
+					<div className="column">
 						<p>
 							Prior to my role as a front-end developer, I earned my M.Ed. in
 							ESOL (English for Speakers of Other Languages) and spent 2 years
@@ -357,10 +365,6 @@ function App() {
 					</p>
 				</div>
 			</section>
-			{/* 
-			<img src={crochetHook}></img>
-			<img src={yarn}></img> */}
-			{/* <img src={dogBall}></img> */}
 		</>
 	);
 }
