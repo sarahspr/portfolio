@@ -34,6 +34,8 @@ function App() {
 	let portfolioWeb = "https://sarahspriggs.com/";
 	let linkedIn = "https://www.linkedin.com/in/sarah-spriggs-445a3431/";
 	let github = "https://github.com/sarahspr";
+	let resumeLink =
+		"https://drive.google.com/file/d/1K3-VpoS8RjTvEtr-W5_ZvJwcs6lMkuQs/view?usp=sharing";
 	// const [scroll, setScroll] = useState(false);
 
 	// window.addEventListener("load", () => {
@@ -132,10 +134,12 @@ function App() {
 							href={buckeyeWeb}
 							target="_blank"
 							className="project-img-wrapper"
-							style={{
-								backgroundImage: `url(${buckeye})`,
-							}}
 						>
+							<img
+								src={buckeye}
+								className="project-img"
+								alt="screenshot of project image"
+							/>
 							<div className="project-overlay">
 								<h3 className="h5 project-title">Buckeye Innovation</h3>
 								<a href={buckeyeWeb} target="_blank" className="project-link">
@@ -148,14 +152,12 @@ function App() {
 						</a>
 					</div>
 					<div className="project-wrapper">
-						<a
-							href={braxosWeb}
-							target="_blank"
-							className="project-img-wrapper"
-							style={{
-								backgroundImage: `url(${braxos})`,
-							}}
-						>
+						<a href={braxosWeb} target="_blank" className="project-img-wrapper">
+							<img
+								src={braxos}
+								className="project-img"
+								alt="screenshot of project image"
+							/>
 							<div className="project-overlay">
 								<h3 className="h5 project-title">braXos</h3>
 								<a href={braxosWeb} target="_blank" className="project-link">
@@ -168,14 +170,12 @@ function App() {
 						</a>
 					</div>
 					<div className="project-wrapper">
-						<a
-							href={eastonWeb}
-							target="_blank"
-							className="project-img-wrapper"
-							style={{
-								backgroundImage: `url(${easton})`,
-							}}
-						>
+						<a href={eastonWeb} target="_blank" className="project-img-wrapper">
+							<img
+								src={easton}
+								className="project-img"
+								alt="screenshot of project image"
+							/>
 							<div className="project-overlay">
 								<h3 className="h5 project-title">Easton Town Center</h3>
 								<a href={eastonWeb} target="_blank" className="project-link">
@@ -188,14 +188,12 @@ function App() {
 						</a>
 					</div>
 					<div className="project-wrapper">
-						<a
-							href={dlzWeb}
-							target="_blank"
-							className="project-img-wrapper"
-							style={{
-								backgroundImage: `url(${dlz})`,
-							}}
-						>
+						<a href={dlzWeb} target="_blank" className="project-img-wrapper">
+							<img
+								src={dlz}
+								className="project-img"
+								alt="screenshot of project image"
+							/>
 							<div className="project-overlay">
 								<h3 className="h5 project-title">DLZ</h3>
 								<a href={dlzWeb} target="_blank" className="project-link">
@@ -208,14 +206,12 @@ function App() {
 						</a>
 					</div>
 					<div className="project-wrapper">
-						<a
-							href={niceWeb}
-							target="_blank"
-							className="project-img-wrapper"
-							style={{
-								backgroundImage: `url(${nice})`,
-							}}
-						>
+						<a href={niceWeb} target="_blank" className="project-img-wrapper">
+							<img
+								src={nice}
+								className="project-img"
+								alt="screenshot of project image"
+							/>
 							<div className="project-overlay">
 								<h3 className="h5 project-title">NICE</h3>
 								<a href={niceWeb} target="_blank" className="project-link">
@@ -232,10 +228,12 @@ function App() {
 							href={traveroWeb}
 							target="_blank"
 							className="project-img-wrapper"
-							style={{
-								backgroundImage: `url(${travero})`,
-							}}
 						>
+							<img
+								src={travero}
+								className="project-img"
+								alt="screenshot of project image"
+							/>
 							<div className="project-overlay">
 								<h3 className="h5 project-title">Travero</h3>
 								<a href={traveroWeb} target="_blank" className="project-link">
@@ -255,10 +253,12 @@ function App() {
 							href={alexhanWeb}
 							target="_blank"
 							className="project-img-wrapper"
-							style={{
-								backgroundImage: `url(${alexandraHan})`,
-							}}
 						>
+							<img
+								src={alexandraHan}
+								className="project-img"
+								alt="screenshot of project image"
+							/>
 							<div className="project-overlay">
 								<h3 className="h5 project-title">Alexandra Han</h3>
 								<a href={alexhanWeb} target="_blank" className="project-link">
@@ -275,10 +275,12 @@ function App() {
 							href={portfolioWeb}
 							target="_blank"
 							className="project-img-wrapper"
-							style={{
-								backgroundImage: `url(${portfolio})`,
-							}}
 						>
+							<img
+								src={portfolio}
+								className="project-img"
+								alt="screenshot image of project"
+							/>
 							<div className="project-overlay">
 								<h3 className="h5 project-title">Portfolio</h3>
 								<a href={portfolioWeb} target="_blank" className="project-link">
@@ -300,11 +302,18 @@ function App() {
 						backgroundImage: `url(${chalkLineFuschia})`,
 					}}
 				></div>
-				<h3>Like what you see so far?</h3>
-				<span className="resume-subheading-wrapper">
-					<span className="resume-subheading">Take a peek at the rest</span>
-					<span className="eyes">👀</span>
-				</span>
+				<div className="column content-wrapper">
+					<h3>Like what you see so far?</h3>
+					<span className="resume-subheading-wrapper">
+						<span className="resume-subheading">Take a peek at the rest</span>
+						<span className="eyes">👀</span>
+					</span>
+				</div>
+				<a href={resumeLink} className="column resume-screenshot-wrapper">
+					<div className="img-wrapper">
+						<img src={resumeScreenshot} alt="large screenshot of my resume" />
+					</div>
+				</a>
 			</section>
 
 			<section id="contact" className="contact-section">
@@ -333,7 +342,7 @@ function App() {
 							</li>
 							<li className="resume-icon-wrapper">
 								<a
-									href="https://drive.google.com/file/d/1K3-VpoS8RjTvEtr-W5_ZvJwcs6lMkuQs/view?usp=sharing"
+									href={resumeLink}
 									target="_blank"
 									style={{
 										backgroundImage: `url(${resume})`,
