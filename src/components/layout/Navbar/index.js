@@ -18,11 +18,7 @@ const Navbar = () => {
 	});
 
 	return (
-		<nav
-			className="site-navigation"
-			role="navigation"
-			aria-label="Main Site Navigation"
-		>
+		<nav className="site-navigation" aria-label="Main Site Navigation">
 			<ul>{navItems}</ul>
 		</nav>
 	);

@@ -11,37 +11,52 @@ const Footer = () => {
 		<>
 			<section id="footer" className="footer section">
 				<div className="footer__content-wrapper">
-					<nav className="footer__nav">
+					<nav className="footer__nav" aria-label="Footer Site Navigation">
 						<ul>
 							<li>
-								<a href={linkedIn} target="_blank">
-									<i class="fa-brands fa-linkedin-in"></i>
+								<a
+									href={linkedIn}
+									target="_blank"
+									aria-label="Link to LinkedIn Profile"
+								>
+									<i aria-hidden="true" class="fa-brands fa-linkedin-in"></i>
 								</a>
 							</li>
 							<li>
-								<a href={github} target="_blank">
-									<i class="fa-brands fa-github"></i>
+								<a
+									href={github}
+									target="_blank"
+									aria-label="Link to GitHub Profile"
+								>
+									<i aria-hidden="true" class="fa-brands fa-github"></i>
 								</a>
 							</li>
 							<li>
-								<a href="mailto:sarah1591@gmail.com">
-									<i class="fa-regular fa-envelope"></i>
+								<a
+									href="mailto:sarah1591@gmail.com"
+									aria-label="Link to Send an Email"
+								>
+									<i aria-hidden="true" class="fa-regular fa-envelope"></i>
 								</a>
 							</li>
 							<li>
-								<a href="tel:315-935-6605">
-									<i class="fa-solid fa-phone"></i>
+								<a href="tel:315-935-6605" aria-label="Link to Call Cell Phone">
+									<i aria-hidden="true" class="fa-solid fa-phone"></i>
 								</a>
 							</li>
 							<li className="footer__nav__resume-icon-wrapper">
 								<a
 									href={resumeLink}
 									target="_blank"
-									style={{
-										backgroundImage: `url(${resume})`,
-									}}
 									className="footer__nav__resume-icon"
-								></a>
+									aria-label="Link to Resume"
+								>
+									<img
+										src={resume}
+										alt="small resume icon"
+										aria-hidden="true"
+									/>
+								</a>
 							</li>
 						</ul>
 					</nav>
