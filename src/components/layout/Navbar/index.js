@@ -12,7 +12,7 @@ const Navbar = () => {
 				<a href={`#${item}`} className="site-navigation__nav-item-link">
 					{el}
 				</a>
-				<span className="vertical-lines"></span>
+				<span className="site-navigation__vertical-lines"></span>
 			</li>
 		);
 	});

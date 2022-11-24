@@ -1,0 +1,105 @@
+.hero {
+	align-items: center;
+	color: $dark;
+	background-color: $grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 4rem;
+	position: relative;
+	text-align: center;
+	h1 {
+		color: $fuschia;
+	}
+	&__container {
+		flex-direction: column-reverse;
+		@media screen and (min-width: $large-tablet) {
+			flex-direction: row;
+		}
+	}
+	&__column {
+		height: initial;
+	}
+	&__content-column {
+		align-items: center;
+		display: flex;
+	}
+	&__content-column-wrapper {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		span {
+			font: 400 3rem/4rem $redhat-reg;
+			margin-bottom: $default-margin;
+			@media screen and (min-width: $large-tablet) {
+				font: 400 4rem/5rem $redhat-reg;
+			}
+		}
+	}
+	&__img-column {
+		display: flex;
+		justify-content: center;
+		margin-bottom: $default-margin;
+		position: relative;
+		@media screen and (min-width: $large-tablet) {
+			margin-bottom: 0;
+		}
+	}
+	&__img-wrapper {
+		position: relative;
+		max-width: 47.5rem;
+		width: 100%;
+		z-index: 2;
+		img {
+			border-radius: 56% 44% 59% 41% / 30% 60% 40% 70%;
+			width: 100%;
+		}
+	}
+	&__chalk-border-grey {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		bottom: -23.5rem;
+		height: 40rem;
+		left: 0;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+	}
+	// #golden-img-container {
+	// 	position: absolute;
+	// 	width: 400px;
+	// 	height: 400px;
+	// 	bottom: -370px;
+	// 	left: -370px;
+	// 	transform: rotate(30deg);
+	// 	transition: all 2s ease-in-out;
+	// 	transition-delay: 250ms;
+	// 	z-index: -1;
+	// 	img {
+	// 		width: 100%;
+	// 	}
+	// 	&.animate {
+	// 		transform: translate(217px, -190px) rotate(30deg);
+	// 	}
+	// }
+
+	// #wheaten-img-container {
+	// 	position: absolute;
+	// 	width: 400px;
+	// 	height: 400px;
+	// 	bottom: -370px;
+	// 	right: -370px;
+	// 	transform: rotate(-30deg);
+	// 	transition: all 2s ease-in-out;
+	// 	transition-delay: 750ms;
+	// 	z-index: -1;
+	// 	img {
+	// 		width: 100%;
+	// 	}
+	// 	&.animate {
+	// 		transform: translate(-225px, -220px) rotate(-30deg);
+	// 	}
+	// }
+}

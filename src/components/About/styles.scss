@@ -1,0 +1,39 @@
+.about {
+	background-color: $fuschia;
+	padding-top: 14rem;
+	padding-bottom: 10rem;
+	position: relative;
+	h2 {
+		color: $white;
+		text-align: center;
+	}
+	&__container {
+		flex-direction: column;
+		@media screen and (min-width: $large-tablet) {
+			flex-direction: row;
+		}
+	}
+	&__column {
+		margin-bottom: $default-margin;
+		@media screen and (min-width: $large-tablet) {
+			margin-bottom: 0;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		p {
+			color: $white;
+		}
+	}
+	&__chalk-border-fuschia {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		bottom: -12.5rem;
+		height: 30rem;
+		left: 0;
+		position: absolute;
+		right: 0;
+		transform: rotate(180deg);
+	}
+}

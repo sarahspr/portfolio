@@ -1,0 +1,22 @@
+.projects {
+	background-color: $grey;
+	padding-top: 16rem;
+	padding-bottom: 12rem;
+	@media screen and (min-width: $large-tablet) {
+		padding-bottom: 8rem;
+	}
+	h2 {
+		color: $fuschia;
+		text-align: center;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 6rem 0;
+		@media screen and (min-width: $large-tablet) {
+			flex-direction: row;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+.footer {
+	background-color: $fuschia;
+	color: $white;
+	padding: 6rem 10.5rem $default-padding;
+	position: relative;
+	h1 {
+		text-align: center;
+	}
+	&__content-wrapper {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@media screen and (min-width: $large-mobile) {
+			flex-direction: row;
+		}
+	}
+	&__nav {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		margin-bottom: 2rem;
+		z-index: 2;
+		@media screen and (min-width: $large-mobile) {
+			margin-bottom: 0;
+		}
+		ul {
+			li {
+				margin-right: 1.5rem;
+				a {
+					color: $white;
+					display: block;
+					height: 100%;
+				}
+				i {
+					&::before {
+						font-size: 3rem;
+					}
+					&.fa-brands {
+						&::before {
+							font-family: $fontawesomeBrands;
+						}
+					}
+					&.fa-regular,
+					&.fa-solid {
+						&::before {
+							font-family: $fontawesome;
+						}
+					}
+				}
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+		&__resume-icon-wrapper {
+			width: 3.3rem;
+		}
+		&__resume-icon {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: block;
+			height: 100%;
+		}
+	}
+}

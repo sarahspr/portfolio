@@ -18,26 +18,26 @@
 				width: 100%;
 			}
 		}
-		.vertical-lines {
-			background-image: linear-gradient(
-				90deg,
-				currentColor,
-				currentColor 33.33%,
-				transparent 33.33%,
-				transparent 100%
-			);
-			background-size: 3px 100%;
-			color: $orange-red;
-			display: inline-block;
-			height: 5px;
-			width: 0%;
-			transition: all 0.5s ease-in-out;
-		}
 	}
 	&__nav-item-link {
 		color: $dark;
 		font-family: $redhat-bold;
 		font-size: 1.6rem;
 		letter-spacing: 0.3rem;
+	}
+	&__vertical-lines {
+		background-image: linear-gradient(
+			90deg,
+			currentColor,
+			currentColor 33.33%,
+			transparent 33.33%,
+			transparent 100%
+		);
+		background-size: 0.3rem 100%;
+		color: $orange-red;
+		display: inline-block;
+		height: 0.5rem;
+		width: 0%;
+		transition: all 0.5s ease-in-out;
 	}
 }
