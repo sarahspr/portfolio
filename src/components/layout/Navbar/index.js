@@ -18,7 +18,11 @@ const Navbar = () => {
 	});
 
 	return (
-		<nav className="site-navigation" aria-label="Main Site Navigation">
+		<nav
+			id="page-top"
+			className="site-navigation"
+			aria-label="Main Site Navigation"
+		>
 			<ul>{navItems}</ul>
 		</nav>
 	);

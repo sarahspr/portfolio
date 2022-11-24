@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from "react-scroll";
 
-import resume from "../../../images/resume.png";
+// Images
+import arrow from "../../../images/arrow.svg";
 
 const Footer = () => {
 	let linkedIn = "https://www.linkedin.com/in/sarah-spriggs-445a3431/";
 	let github = "https://github.com/sarahspr";
 	let resumeLink =
 		"https://drive.google.com/file/d/1K3-VpoS8RjTvEtr-W5_ZvJwcs6lMkuQs/view?usp=sharing";
+
 	return (
 		<>
 			<section id="footer" className="footer section">
@@ -46,23 +49,24 @@ const Footer = () => {
 									<i className="fa-solid fa-phone"></i>
 								</a>
 							</li>
-							<li className="footer__nav__resume-icon-wrapper">
-								<a
-									href={resumeLink}
-									target="_blank"
-									rel="noreferrer"
-									className="footer__nav__resume-icon"
-									aria-label="Link to Resume"
-								>
-									<img src={resume} alt="small resume icon" />
-								</a>
-							</li>
 						</ul>
 					</nav>
 					<p>
-						<i className="fa-regular fa-copyright"></i> 2022 Copyright
+						<i className="fa-regular fa-copyright"></i>
+						<span>2022 Copyright</span>
 					</p>
 				</div>
+
+				<Link
+					className="page-nav-wrapper"
+					role="button"
+					to="page-top"
+					smooth="true"
+					spy="true"
+					duration={500}
+				>
+					<img src={arrow} alt="Page up site navigation arrow" />
+				</Link>
 			</section>
 		</>
 	);

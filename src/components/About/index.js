@@ -1,5 +1,6 @@
 import React from "react";
 
+//Images
 import chalkLineFuschia from "../../images/chalk-line-fuschia.svg";
 
 const About = () => {
@@ -10,23 +11,28 @@ const About = () => {
 				<div className="about__container container">
 					<div className="about__column column">
 						<p>
-							I am an innovative and collaborate self-taught front-end developer
-							with 3+ years of development experience. I have worked in
-							fast-paced agencies building custom, response, and accessible
-							web-based applications for 20+ clients utilizing various front-end
-							technologies. Additionally I have lead 7+ WordPress site builds.
-							Besides development, I have recently written documentation
-							outlining coding standards for front-end developers along with
-							documentation regarding web accessibility standards and their
-							importance.
+							Growing up with friends from various cultural and linguistic
+							backgrounds, I fell in love with language at an early age. In
+							college I pursued an undergraduate degree in Linguistics and
+							studied abroad in India for a year where I spent time learning
+							Hindi. I then furthered my eduation by earning an M.Ed. in
+							ESOL(English for Speakers of Other Languages) and spent two years
+							as an Adult ESL instructor.
 						</p>
 					</div>
 					<div className="about__column column">
 						<p>
-							Prior to my role as a front-end developer, I earned my M.Ed. in
-							ESOL (English for Speakers of Other Languages) and spent 2 years
-							as an ESL teacher. Having this unique background in education
-							allows me to serve as a teacher and mentor for other developers.
+							In 2018 I combined my love for language with my enjoyment of
+							solving puzzles and took a stab at teaching myself web
+							development. Since then, I have worked in fast-paced agencies
+							building custom, response, and accessible web-based applications
+							for 20+ clients utilizing various front end technologies.
+						</p>
+						<br />
+						<p>
+							Beyond being a developer, I'm a crocheter, dog mom of two crazy
+							pups, language enthusiast, and traveler; none of which happen
+							before at least 1 cup of coffee.
 						</p>
 					</div>
 				</div>

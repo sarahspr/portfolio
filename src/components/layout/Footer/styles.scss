@@ -1,8 +1,10 @@
 .footer {
 	background-color: $fuschia;
 	color: $white;
-	padding: 6rem 10.5rem $default-padding;
 	position: relative;
+	@media screen and (min-width: $large-tablet) {
+		padding: 6rem 10.5rem $default-padding;
+	}
 	h1 {
 		text-align: center;
 	}
@@ -13,6 +15,21 @@
 		justify-content: space-between;
 		@media screen and (min-width: $large-mobile) {
 			flex-direction: row;
+		}
+		p {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			@media screen and (min-width: $large-mobile) {
+				width: unset;
+			}
+			i {
+				margin-right: 1rem;
+			}
+		}
+		span {
+			display: block;
 		}
 	}
 	&__nav {
@@ -25,6 +42,7 @@
 			margin-bottom: 0;
 		}
 		ul {
+			align-items: center;
 			li {
 				margin-right: 1.5rem;
 				a {
@@ -34,7 +52,10 @@
 				}
 				i {
 					&::before {
-						font-size: 3rem;
+						font-size: 2.4rem;
+						@media screen and (min-width: $small-mobile) {
+							font-size: 3rem;
+						}
 					}
 					&.fa-brands {
 						&::before {
@@ -53,14 +74,40 @@
 				}
 			}
 		}
-		&__resume-icon-wrapper {
-			width: 3.3rem;
+	}
+
+	.page-nav-wrapper {
+		animation: animate-arrow 1.5s linear infinite;
+		bottom: 14rem;
+		cursor: pointer;
+		display: none;
+		height: 4.5rem;
+		position: absolute;
+		right: 1rem;
+		@media screen and (min-width: $large-mobile) {
+			display: block;
 		}
-		&__resume-icon {
-			img {
-				height: auto;
-				width: 100%;
-			}
+		@media screen and (min-width: $large-tablet) {
+			bottom: 10rem;
 		}
+
+		img {
+			height: 100%;
+			transform: rotate(-76deg);
+		}
+	}
+}
+
+@keyframes animate-arrow {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+	25%,
+	75% {
+		transform: translate(0, -5px);
+	}
+	50% {
+		transform: translate(0, -10px);
 	}
 }

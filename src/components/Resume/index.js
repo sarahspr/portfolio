@@ -16,7 +16,7 @@ const Resume = () => {
 						backgroundImage: `url(${chalkLineFuschia})`,
 					}}
 				></div>
-				<div className="column resume__column">
+				<div className="column resume__column resume__content-column">
 					<h3>Like what you see so far?</h3>
 					<span className="resume__subheading-wrapper">
 						<span className="resume__subheading-wrapper__subheading">
@@ -25,7 +25,10 @@ const Resume = () => {
 						<span className="resume__subheading-wrapper__eyes">👀</span>
 					</span>
 				</div>
-				<a href={resumeLink} className="column resume__column">
+				<a
+					href={resumeLink}
+					className="column resume__column resume__screenshot-column"
+				>
 					<div className="resume__screenshot-img-wrapper">
 						<img src={resumeScreenshot} alt="large screenshot of my resume" />
 					</div>
