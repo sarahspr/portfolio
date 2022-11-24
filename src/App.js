@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //Styles
 import "./App.scss";
@@ -15,6 +15,15 @@ import Resume from "./components/Resume";
 import upArrow from "./images/up-arrow.png";
 
 function App() {
+	// const [isScrolled, setScrolled] = useState(false);
+
+	// window.addEventListener("scroll", function () {
+	// 	let scrollPosition = window.scrollY;
+	// 	if (scrollPosition > 830) {
+	// 		setScrolled(true);
+	// 		console.log(isScrolled);
+	// 	}
+	// });
 	return (
 		<>
 			<div className="page-nav-arrow">

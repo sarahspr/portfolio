@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 //Components
 import Button from "../Button";
@@ -47,10 +47,7 @@ const Hero = () => {
 					</div>
 					<div className="column hero_column hero__img-column">
 						<div className="hero__img-wrapper">
-							<img
-								src={avatarPinkBackground}
-								alt="Avatar image of myself"
-							></img>
+							<img src={avatarPinkBackground} alt="Avatar of myself"></img>
 						</div>
 					</div>
 				</div>

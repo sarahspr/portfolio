@@ -9,11 +9,16 @@ const ProjectCard = (props) => {
 	return (
 		<>
 			<div className="project-card">
-				<a href={href} target="_blank" className="project-card__img-wrapper">
+				<a
+					href={href}
+					target="_blank"
+					rel="noreferrer"
+					className="project-card__img-wrapper"
+				>
 					<img
 						src={imgSrc}
 						className="project-card__project-img"
-						alt="screenshot of project image"
+						alt="screenshot of project homepage"
 					/>
 					<div className="project-card__overlay">
 						<h3 className="h5 project-card__title">{title}</h3>
