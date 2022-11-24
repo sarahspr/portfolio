@@ -64,7 +64,7 @@ const Projects = () => {
 						href="https://alexandrahan.com/"
 						imgSrc={alexandraHan}
 						title="Alexandra Han"
-						technology="HTML5, CSS3, SASS, Bootstrap, jQuery, PHP, WordPres"
+						technology="HTML5, CSS3, SASS, Bootstrap, jQuery, PHP, WordPress"
 					/>
 					<ProjectCard
 						href="/"
