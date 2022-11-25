@@ -68,3 +68,5 @@ node_modules/
 # DS Store Files
 .DS_Store
 build/.DS_Store
+
+build/
