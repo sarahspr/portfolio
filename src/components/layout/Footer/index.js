@@ -7,8 +7,6 @@ import arrow from "../../../images/arrow.svg";
 const Footer = () => {
 	let linkedIn = "https://www.linkedin.com/in/sarah-spriggs-445a3431/";
 	let github = "https://github.com/sarahspr";
-	let resumeLink =
-		"https://drive.google.com/file/d/1K3-VpoS8RjTvEtr-W5_ZvJwcs6lMkuQs/view?usp=sharing";
 
 	return (
 		<>
@@ -62,7 +60,6 @@ const Footer = () => {
 					role="button"
 					to="page-top"
 					smooth="true"
-					spy="true"
 					duration={500}
 				>
 					<img src={arrow} alt="Page up site navigation arrow" />
