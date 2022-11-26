@@ -13,6 +13,8 @@
 	}
 	&__container {
 		flex-direction: column-reverse;
+		position: relative;
+		z-index: 2;
 		@media screen and (min-width: $large-tablet) {
 			flex-direction: row;
 		}
