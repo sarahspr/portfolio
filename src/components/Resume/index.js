@@ -5,7 +5,7 @@ import resumeScreenshot from "../../images/resume-screenshot.png";
 
 const Resume = () => {
 	let resumeLink =
-		"https://drive.google.com/file/d/1K3-VpoS8RjTvEtr-W5_ZvJwcs6lMkuQs/view?usp=sharing";
+		"https://drive.google.com/file/d/1fCfIkagWmG83ZfyMluTRCm0Akjnve-j6/view?usp=sharing";
 
 	return (
 		<>
