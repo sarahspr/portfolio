@@ -21,7 +21,8 @@
 		overflow: hidden;
 		position: relative;
 		width: 100%;
-		&:hover {
+		&:hover,
+		&:active &:focus {
 			.project-card__overlay {
 				clip-path: ellipse(closest-side farthest-side);
 				opacity: 1;
