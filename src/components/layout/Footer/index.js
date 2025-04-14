@@ -36,7 +36,7 @@ const Footer = () => {
 							</li>
 							<li>
 								<a
-									href="mailto:sarah1591@gmail.com"
+									href="mailto:sarahjainvi@gmail.com"
 									aria-label="Link to Send an Email"
 								>
 									<i className="fa-regular fa-envelope"></i>
@@ -51,7 +51,7 @@ const Footer = () => {
 					</nav>
 					<p>
 						<i className="fa-regular fa-copyright"></i>
-						<span>2022 Copyright</span>
+						<span>2025 Copyright</span>
 					</p>
 				</div>
 

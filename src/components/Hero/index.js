@@ -8,25 +8,6 @@ import avatarPinkBackground from "../../images/avatar-pink-background.svg";
 import chalkLineGrey from "../../images/chalk-line-grey.svg";
 
 const Hero = () => {
-	///////////// Animations to add back in later? ////////////
-	// Sets up initial state for scroll
-
-	// const [scroll, setScroll] = useState(false);
-
-	//updates scroll state when window loads
-
-	// window.addEventListener("load", () => {
-	// 	setScroll(true);
-	// });
-
-	//Updates scroll state based on scroll position, removes event listener
-
-	// useEffect(() => {
-	// 	window.addEventListener("scroll", () => {
-	// 		setScroll(window.scrollY <= 300);
-	// 	});
-	// 	return () => window.removeEventListener("scroll", null);
-	// }, []);
 	return (
 		<>
 			<section id="hero" className="hero section">
@@ -35,13 +16,12 @@ const Hero = () => {
 					<div className="column hero__column hero__content-column">
 						<div className="hero__content-column-wrapper">
 							<span>
-								I've been a CSS Wizard for 3+ years. Welcome to my corner of the
-								internet.
+							Frontend Engineer with 5+ years of experience building responsive, accessible apps using React, TailwindCSS, and modern web standards.
 							</span>
 							<Button
 								className="button"
-								btnLink="#about"
-								btnText="Get to know me"
+								btnLink="#projects"
+								btnText="Explore My Projects"
 							/>
 						</div>
 					</div>
@@ -51,13 +31,6 @@ const Hero = () => {
 						</div>
 					</div>
 				</div>
-				{/* Images to be used with the scroll state above */}
-				{/* <div id="golden-img-container" className={scroll ? "animate" : ""}>
-					<img id="golden" src={golden}></img>
-				</div>
-				<div id="wheaten-img-container" className={scroll ? "animate" : ""}>
-					<img id="wheaten" src={wheaten}></img>
-				</div> */}
 				<div
 					className="hero__chalk-border-grey"
 					style={{

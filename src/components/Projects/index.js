@@ -12,6 +12,9 @@ import nice from "../../images/nice.png";
 import travero from "../../images/travero.png";
 import alexandraHan from "../../images/alexandra-han.png";
 import portfolio from "../../images/portfolio.png";
+import adcetrispro from "../../images/adcetris-pro.png";
+import ib6 from "../../images/ib6.png";
+import gkelite from "../../images/gkelite.png";
 
 const Projects = () => {
 	return (
@@ -20,40 +23,51 @@ const Projects = () => {
 				<h2>Projects I've been a part of...</h2>
 				<div className="projects__wrapper">
 					<ProjectCard
+						href="https://ib6andcancer.com/"
+						imgSrc={ib6}
+						title="IB6 & Cancer"
+						technology="React, TypeScript, Nextjs, TailwindCSS"
+					/>
+					<ProjectCard
+						href="https://adcetrispro.com/"
+						imgSrc={adcetrispro}
+						title="AdcetrisPro"
+						technology="React, TypeScript, Nextjs, TailwindCSS"
+					/>
+					<ProjectCard
+						href="https://www.gkelite.com/a/cpq/index.liquid?product=40971119427683"
+						imgSrc={gkelite}
+						title="GKElite"
+						technology="React, TypeScript, SASS, Liquid,"
+					/>
+					<ProjectCard
 						href="https://nice.com/"
 						imgSrc={nice}
 						title="NICE"
-						technology="HTML5, CSS3, SASS, Handlebars.js, JavaScript, jQuery"
-					/>
+						technology="JavaScript, jQuery, HTML, Handlebars,js, SASS" />
 					<ProjectCard
 						href="https://travero.com"
 						imgSrc={travero}
 						title="Travero"
-						technology="HTML5, CSS3, SASS, Handlebars.js, JavaScript, jQuery"
+						technology="JavaScript, jQuery, HTML, Handlebars,js, SASS"
 					/>
 					<ProjectCard
 						href="https://eastontowncenter.com/"
 						imgSrc={easton}
 						title="Easton Town Center"
-						technology="HTML5, CSS3, SASS, Bootstrap, jQuery, PHP, WordPress"
+						technology="HTML, SASS, Bootstrap, jQuery, PHP, WordPress"
 					/>
 					<ProjectCard
 						href="https://dlz.com/"
 						imgSrc={dlz}
 						title="DLZ"
-						technology="HTML5, CSS3, SASS, Bootstrap, jQuery, PHP, WordPress"
-					/>
-					<ProjectCard
-						href="https://buckeyeinnovation.com/"
-						imgSrc={buckeye}
-						title="Buckeye Innovation"
-						technology="HTML5, CSS3, SASS, Bootstrap, jQuery, PHP, WordPress"
+						technology="HTML, SASS, Bootstrap, jQuery, PHP, WordPress"
 					/>
 					<ProjectCard
 						href="https://braxos.com/"
 						imgSrc={braxos}
 						title="braXos"
-						technology="HTML5, CSS3, SASS, Bootstrap, jQuery, PHP, WordPress"
+						technology="HTML, SASS, Bootstrap, jQuery, PHP, WordPress"
 					/>
 				</div>
 
@@ -64,13 +78,13 @@ const Projects = () => {
 						href="https://alexandrahan.com/"
 						imgSrc={alexandraHan}
 						title="Alexandra Han"
-						technology="HTML5, CSS3, SASS, Bootstrap, jQuery, PHP, WordPress"
+						technology="HTML, SASS, Bootstrap, jQuery, PHP, WordPress"
 					/>
 					<ProjectCard
 						href="/"
 						imgSrc={portfolio}
 						title="Portfolio"
-						technology="HTML5, CSS3, SASS, React"
+						technology="React, HTML, SASS"
 					/>
 				</div>
 			</section>
