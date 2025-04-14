@@ -4,7 +4,6 @@ import React from "react";
 import ProjectCard from "../ProjectCard";
 
 //Images
-import buckeye from "../../images/buckeye.png";
 import braxos from "../../images/braxos.png";
 import easton from "../../images/easton.png";
 import dlz from "../../images/dlz.png";

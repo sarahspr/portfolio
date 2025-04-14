@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import arrow from "../../../images/arrow.svg";
 
 const Footer = () => {
-	let linkedIn = "https://www.linkedin.com/in/sarah-spriggs-445a3431/";
+	let linkedIn = "https://www.linkedin.com/in/sarah-jainvi-445a3431/";
 	let github = "https://github.com/sarahspr";
 
 	return (
