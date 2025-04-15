@@ -14,6 +14,7 @@ import portfolio from "../../images/portfolio.png";
 import adcetrispro from "../../images/adcetris-pro.png";
 import ib6 from "../../images/ib6.png";
 import gkelite from "../../images/gkelite.png";
+import ashuWedsSarah from "../../images/ashu-weds-sarah.png";
 
 const Projects = () => {
 	return (
@@ -74,6 +75,12 @@ const Projects = () => {
 
 				<div className="projects__wrapper">
 					<ProjectCard
+						href="https://ashuwedssarah.com/"
+						imgSrc={ashuWedsSarah}
+						title="Ashu Weds Sarah"
+						technology="Angular, HTML, SASS, Firebase"
+					/>
+					<ProjectCard
 						href="https://alexandrahan.com/"
 						imgSrc={alexandraHan}
 						title="Alexandra Han"
@@ -83,7 +90,7 @@ const Projects = () => {
 						href="/"
 						imgSrc={portfolio}
 						title="Portfolio"
-						technology="React, HTML, SASS"
+						technology="React, HTML, SASS, Firebase"
 					/>
 				</div>
 			</section>

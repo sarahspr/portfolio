@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f979d1da.chunk.css",
-    "main.js": "/static/js/main.ef707426.chunk.js",
-    "main.js.map": "/static/js/main.ef707426.chunk.js.map",
+    "main.js": "/static/js/main.a78f69f0.chunk.js",
+    "main.js.map": "/static/js/main.a78f69f0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e20f4197.js",
     "runtime-main.js.map": "/static/js/runtime-main.e20f4197.js.map",
     "static/js/2.d89b65f2.chunk.js": "/static/js/2.d89b65f2.chunk.js",
@@ -16,7 +16,6 @@
     "static/media/avatar-pink-background.0717b72f.svg": "/static/media/avatar-pink-background.0717b72f.svg",
     "static/media/App.scss": "/static/media/redhat-reg.bb9a004c.ttf",
     "static/media/braxos.e48e6761.png": "/static/media/braxos.e48e6761.png",
-    "static/media/buckeye.d8c2d884.png": "/static/media/buckeye.d8c2d884.png",
     "static/media/chalk-line-fuschia.3f3c632f.svg": "/static/media/chalk-line-fuschia.3f3c632f.svg",
     "static/media/chalk-line-grey.96dd95b1.svg": "/static/media/chalk-line-grey.96dd95b1.svg",
     "static/media/dlz.ef717c76.png": "/static/media/dlz.ef717c76.png",
@@ -32,6 +31,6 @@
     "static/js/runtime-main.e20f4197.js",
     "static/js/2.d89b65f2.chunk.js",
     "static/css/main.f979d1da.chunk.css",
-    "static/js/main.ef707426.chunk.js"
+    "static/js/main.a78f69f0.chunk.js"
   ]
 }
