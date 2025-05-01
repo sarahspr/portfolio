@@ -14,7 +14,7 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin: 6rem 0;
+		margin: 6rem auto;
 		@media screen and (min-width: $large-tablet) {
 			flex-direction: row;
 		}

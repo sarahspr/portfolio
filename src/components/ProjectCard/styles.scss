@@ -110,26 +110,21 @@
 		@media screen and (min-width: $large-mobile) {
 			font-size: 1.4rem;
 			line-height: 1.6rem;
-			margin-bottom: 2rem;
 		}
 		@media screen and (min-width: $tablet) {
 			font-size: 1.6rem;
 			line-height: 1.8rem;
-			margin-bottom: $default-margin;
 		}
 		@media screen and (min-width: $large-tablet) {
 			font-size: 1.2rem;
 			line-height: 1.4rem;
-			margin-bottom: 1rem;
 		}
 		@media screen and (min-width: $small-desktop) {
 			font-size: 1.6rem;
 			line-height: 1.8rem;
-			margin-bottom: 2.5rem;
 		}
 		@media screen and (min-width: $desktop) {
 			font-size: 1.8rem;
-			margin-bottom: $default-margin;
 		}
 		@media screen and (min-width: $large-desktop) {
 			font-size: 2rem;

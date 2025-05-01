@@ -14,16 +14,14 @@ const Hero = () => {
 				<h1>Hey there, I'm Sarah.</h1>
 				<div className="hero__container container">
 					<div className="column hero__column hero__content-column">
-						<div className="hero__content-column-wrapper">
-							<span>
-							Frontend Engineer with 5+ years of experience building responsive, accessible apps using React, TailwindCSS, and modern web standards.
-							</span>
-							<Button
-								className="button"
-								btnLink="#projects"
-								btnText="Explore My Projects"
-							/>
-						</div>
+						<p>
+						Frontend Engineer with 5+ years of experience building responsive, accessible apps using React, TailwindCSS, and modern web standards.
+						</p>
+						<Button
+							className="button"
+							btnLink="#projects"
+							btnText="Explore My Projects"
+						/>
 					</div>
 					<div className="column hero_column hero__img-column">
 						<div className="hero__img-wrapper">

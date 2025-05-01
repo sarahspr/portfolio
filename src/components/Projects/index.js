@@ -21,7 +21,7 @@ const Projects = () => {
 		<>
 			<section id="projects" className="projects section">
 				<h2>Projects I've been a part of...</h2>
-				<div className="projects__wrapper">
+				<div className="projects__wrapper container">
 					<ProjectCard
 						href="https://ib6andcancer.com/"
 						imgSrc={ib6}
@@ -73,7 +73,7 @@ const Projects = () => {
 
 				<h2>Solo Projects</h2>
 
-				<div className="projects__wrapper">
+				<div className="projects__wrapper container">
 					<ProjectCard
 						href="https://ashuwedssarah.com/"
 						imgSrc={ashuWedsSarah}

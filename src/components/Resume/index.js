@@ -8,8 +8,8 @@ const Resume = () => {
 	"https://drive.google.com/file/d/1eRrvnlaiUYJCU_NwekoUSOKoyb-0qB6Z/view?usp=sharing"
 
 	return (
-		<>
-			<section id="resume" className="resume section">
+		<section id="resume" className="resume section">
+			<div className="resume__inner-wrapper container">
 				<div
 					className="resume__chalk-border-fuschia"
 					style={{
@@ -33,8 +33,8 @@ const Resume = () => {
 						<img src={resumeScreenshot} alt="large screenshot of my resume" />
 					</div>
 				</a>
-			</section>
-		</>
+			</div>
+		</section>
 	);
 };
 
