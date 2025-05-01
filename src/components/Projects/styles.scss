@@ -1,7 +1,6 @@
 .projects {
 	background-color: $grey;
-	padding-top: 16rem;
-	padding-bottom: 12rem;
+	padding: 12rem 2rem;
 	@media screen and (min-width: $large-tablet) {
 		padding-bottom: 8rem;
 	}
@@ -14,7 +13,7 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin: 6rem auto;
+		margin: 4rem auto;
 		@media screen and (min-width: $large-tablet) {
 			flex-direction: row;
 		}

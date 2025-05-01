@@ -1,7 +1,15 @@
 .project-card {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	box-shadow: $default-box-shadow;
-	height: fit-content;
-	margin-bottom: 5.5rem;
+	// display: block;
+	// height: fit-content;
+	margin-bottom: 4rem;
+	min-height: 15rem;
+	// max-height: 28.5rem;
+	overflow: hidden;
+	position: relative;
 	width: 100%;
 	&:last-of-type {
 		margin-bottom: 0;
@@ -9,50 +17,42 @@
 			margin-bottom: 5.5rem;
 		}
 	}
+	// @media screen and (min-width: $large-tablet) {
+	// 	width: 47%;
+	// }
+	// @media screen and (min-width: $large-desktop) {
+	// 	height: auto;
+	// 	max-width: 80rem;
+	// }
+
+
+	&:hover,
+	&:active &:focus {
+		.project-card__overlay {
+			clip-path: ellipse(closest-side farthest-side);
+			opacity: 1;
+			transform: scale(1.5);
+		}
+	}
+	@media screen and (min-width: $tablet) {
+		max-height: 38.5rem;
+	}
 	@media screen and (min-width: $large-tablet) {
-		width: 47%;
+		max-height: 19.6rem;
+	}
+	@media screen and (min-width: $small-desktop) {
+		max-height: 25rem;
+	}
+	@media screen and (min-width: $desktop) {
+		max-height: 30.5rem;
 	}
 	@media screen and (min-width: $large-desktop) {
-		height: auto;
-		max-width: 80rem;
+		max-height: 42.5rem;
 	}
-	&__img-wrapper {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		display: block;
-		max-height: 28.5rem;
-		overflow: hidden;
-		position: relative;
-		width: 100%;
-		&:hover,
-		&:active &:focus {
-			.project-card__overlay {
-				clip-path: ellipse(closest-side farthest-side);
-				opacity: 1;
-				transform: scale(1.5);
-			}
-		}
-		@media screen and (min-width: $tablet) {
-			max-height: 38.5rem;
-		}
-		@media screen and (min-width: $large-tablet) {
-			max-height: 19.6rem;
-		}
-		@media screen and (min-width: $small-desktop) {
-			max-height: 25rem;
-		}
-		@media screen and (min-width: $desktop) {
-			max-height: 30.5rem;
-		}
-		@media screen and (min-width: $large-desktop) {
-			max-height: 42.5rem;
-		}
-	}
-	&__project-img {
-		height: auto;
-		width: 100%;
-	}
+
+
+
+
 	&__overlay {
 		align-items: center;
 		background-color: $orange;
