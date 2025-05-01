@@ -1,57 +1,29 @@
 .project-card {
+	aspect-ratio: 16 / 9;
+	width: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: $default-box-shadow;
-	// display: block;
-	// height: fit-content;
-	margin-bottom: 4rem;
-	min-height: 15rem;
-	// max-height: 28.5rem;
 	overflow: hidden;
 	position: relative;
-	width: 100%;
+	display: block;
 	&:last-of-type {
 		margin-bottom: 0;
 		@media screen and (min-width: $large-tablet) {
 			margin-bottom: 5.5rem;
 		}
 	}
-	// @media screen and (min-width: $large-tablet) {
-	// 	width: 47%;
-	// }
-	// @media screen and (min-width: $large-desktop) {
-	// 	height: auto;
-	// 	max-width: 80rem;
-	// }
-
 
 	&:hover,
-	&:active &:focus {
+	&:active, 
+	&:focus {
 		.project-card__overlay {
 			clip-path: ellipse(closest-side farthest-side);
 			opacity: 1;
 			transform: scale(1.5);
 		}
 	}
-	@media screen and (min-width: $tablet) {
-		max-height: 38.5rem;
-	}
-	@media screen and (min-width: $large-tablet) {
-		max-height: 19.6rem;
-	}
-	@media screen and (min-width: $small-desktop) {
-		max-height: 25rem;
-	}
-	@media screen and (min-width: $desktop) {
-		max-height: 30.5rem;
-	}
-	@media screen and (min-width: $large-desktop) {
-		max-height: 42.5rem;
-	}
-
-
-
 
 	&__overlay {
 		align-items: center;
@@ -73,6 +45,7 @@
 		top: 0;
 		transform: scale(0);
 		transition: all 0.75s ease;
+		
 		@media screen and (min-width: $large-mobile) {
 			font-size: 1rem;
 			line-height: 1.4rem;
