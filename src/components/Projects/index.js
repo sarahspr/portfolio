@@ -70,18 +70,6 @@ const Projects = () => {
 					title="Easton Town Center"
 					technology="HTML, SASS, Bootstrap, jQuery, PHP, WordPress"
 				/>
-				<ProjectCard
-					href="https://dlz.com/"
-					imgSrc={dlz}
-					title="DLZ"
-					technology="HTML, SASS, Bootstrap, jQuery, PHP, WordPress"
-				/>
-				<ProjectCard
-					href="https://braxos.com/"
-					imgSrc={braxos}
-					title="braXos"
-					technology="HTML, SASS, Bootstrap, jQuery, PHP, WordPress"
-				/>
 			</div>
 
 			<h2>Solo Projects</h2>
