@@ -15,6 +15,8 @@ import adcetrispro from "../../images/adcetris-pro.png";
 import ib6 from "../../images/ib6.png";
 import gkelite from "../../images/gkelite.png";
 import ashuWedsSarah from "../../images/ashu-weds-sarah.png";
+import curtis from "../../images/curtis.png";
+import tukysa from "../../images/tukysa.png";
 
 const Projects = () => {
 	return (
@@ -22,33 +24,45 @@ const Projects = () => {
 			<h2>Projects I've been a part of...</h2>
 			<div className="projects__wrapper container">
 				<ProjectCard
+					href="https://curtisresteq.com/"
+					imgSrc={curtis}
+					title="Curtis Restaurant Equipment"
+					technology="React, Next.js, TypeScript, TailwindCSS, Medusa.js"
+				/>
+				<ProjectCard
 					href="https://ib6andcancer.com/"
 					imgSrc={ib6}
 					title="IB6 & Cancer"
-					technology="React, TypeScript, Nextjs, TailwindCSS"
+					technology="React, Next.js, TypeScript, TailwindCSS, Sitecore"
 				/>
 				<ProjectCard
 					href="https://adcetrispro.com/"
 					imgSrc={adcetrispro}
 					title="AdcetrisPro"
-					technology="React, TypeScript, Nextjs, TailwindCSS"
+					technology="React, Next.js, TypeScript, TailwindCSS, Sitecore"
+				/>
+				<ProjectCard
+					href="https://www.tukysa.com/"
+					imgSrc={tukysa}
+					title="Tukysa"
+					technology="React, Next.js, TypeScript, SASS, Sitecore"
 				/>
 				<ProjectCard
 					href="https://www.gkelite.com/a/cpq/index.liquid?product=40971119427683"
 					imgSrc={gkelite}
 					title="GKElite"
-					technology="React, TypeScript, SASS, Shopify"
+					technology="React, Next.js, TypeScript, SASS, Shopify"
 				/>
 				<ProjectCard
 					href="https://nice.com/"
 					imgSrc={nice}
 					title="NICE"
-					technology="JavaScript, jQuery, HTML, Handlebars,js, SASS" />
+					technology="JavaScript, jQuery, Handlebars.js, SASS, Sitecore" />
 				<ProjectCard
 					href="https://travero.com"
 					imgSrc={travero}
 					title="Travero"
-					technology="JavaScript, jQuery, HTML, Handlebars,js, SASS"
+					technology="JavaScript, jQuery, Handlebars.js, SASS, Sitecore"
 				/>
 				<ProjectCard
 					href="https://eastontowncenter.com/"
