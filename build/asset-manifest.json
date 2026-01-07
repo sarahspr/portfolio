@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec61ec52.chunk.css",
-    "main.js": "/static/js/main.a54b24f3.chunk.js",
-    "main.js.map": "/static/js/main.a54b24f3.chunk.js.map",
+    "main.css": "/static/css/main.4658dca4.chunk.css",
+    "main.js": "/static/js/main.37861dcf.chunk.js",
+    "main.js.map": "/static/js/main.37861dcf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e20f4197.js",
     "runtime-main.js.map": "/static/js/runtime-main.e20f4197.js.map",
     "static/js/2.d89b65f2.chunk.js": "/static/js/2.d89b65f2.chunk.js",
     "static/js/2.d89b65f2.chunk.js.map": "/static/js/2.d89b65f2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.ec61ec52.chunk.css.map": "/static/css/main.ec61ec52.chunk.css.map",
+    "static/css/main.4658dca4.chunk.css.map": "/static/css/main.4658dca4.chunk.css.map",
     "static/js/2.d89b65f2.chunk.js.LICENSE.txt": "/static/js/2.d89b65f2.chunk.js.LICENSE.txt",
     "static/media/adcetris-pro.ee03e3c5.png": "/static/media/adcetris-pro.ee03e3c5.png",
     "static/media/alexandra-han.d3e4bfb7.png": "/static/media/alexandra-han.d3e4bfb7.png",
@@ -19,6 +19,7 @@
     "static/media/braxos.e48e6761.png": "/static/media/braxos.e48e6761.png",
     "static/media/chalk-line-fuschia.3f3c632f.svg": "/static/media/chalk-line-fuschia.3f3c632f.svg",
     "static/media/chalk-line-grey.96dd95b1.svg": "/static/media/chalk-line-grey.96dd95b1.svg",
+    "static/media/curtis.c47ee6c4.png": "/static/media/curtis.c47ee6c4.png",
     "static/media/dlz.ef717c76.png": "/static/media/dlz.ef717c76.png",
     "static/media/easton.c2e41275.png": "/static/media/easton.c2e41275.png",
     "static/media/gkelite.6ccdb768.png": "/static/media/gkelite.6ccdb768.png",
@@ -26,12 +27,13 @@
     "static/media/nice.178c0813.png": "/static/media/nice.178c0813.png",
     "static/media/portfolio.f6deac5a.png": "/static/media/portfolio.f6deac5a.png",
     "static/media/resume-screenshot.52171664.png": "/static/media/resume-screenshot.52171664.png",
-    "static/media/travero.678afce8.png": "/static/media/travero.678afce8.png"
+    "static/media/travero.678afce8.png": "/static/media/travero.678afce8.png",
+    "static/media/tukysa.6309be22.png": "/static/media/tukysa.6309be22.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e20f4197.js",
     "static/js/2.d89b65f2.chunk.js",
-    "static/css/main.ec61ec52.chunk.css",
-    "static/js/main.a54b24f3.chunk.js"
+    "static/css/main.4658dca4.chunk.css",
+    "static/js/main.37861dcf.chunk.js"
   ]
 }

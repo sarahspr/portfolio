@@ -5,7 +5,7 @@ import resumeScreenshot from "../../images/resume-screenshot.png";
 
 const Resume = () => {
 	let resumeLink =
-	"https://drive.google.com/file/d/1eRrvnlaiUYJCU_NwekoUSOKoyb-0qB6Z/view?usp=sharing"
+	"https://drive.google.com/file/d/12xzsyBlFpl82eJTs3yyxQC5u3eCzXKUD/view?usp=sharing"
 
 	return (
 		<section id="resume" className="resume section">
